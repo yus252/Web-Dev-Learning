@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- metadata goes into head -->
+	<title> HTML Learning</title>
+
+</head>
+<body>
+	<!-- content goes into the body -->
+	<h1>HTML Learning</h1>
+	<h2>Heading</h2>
+	<h4>This is another heading</h4>
+	<h6>This is another heading!</h6>
+	
+	<!-- Paragraph and Tags -->
+	<h2>Paragraph and Tags</h2>
+	<p>This is the first paragraph. <br> br means break, which will create a new line.</br> </p>
+	<p>This is the second paragraph. </p>
+
+	<p>Tags: <b> b tag means bolded. </b> <strong> strong does the same thing
+	 but instead of style, it belongs to strucutre. </strong> <em> em means 
+	 emphasize. </em></p>
+
+	<div> <em>div</em> is a block-level container. It takes up its own line, just like 
+	pargraph does. </div> See, these words goes to another line now. 
+	<span><em>span</em> is a inline container for selecting content. </span>
+
+	<!-- How to create List -->
+	<h2>Ordered and Unordered List</h2>
+	<!-- Ordered List -->
+	 <h4>Ordered List</h4>
+	 <ol>
+	 	<li>Element 1</li>
+	 	<li>Element 2</li>	 	
+	 	<li>Element 3</li>
+	 		<ol>
+	 			<li>List inside list</li>
+	 			<li>List inside list</li>
+	 		</ol>
+	</ol>	
+	<!-- Unordered List -->
+	<h4>Unordered List</h4>
+	<ul>
+		<li>Element 1</li>
+	 	<li>Element 2</li>	 	
+	 	<li>Element 3</li>
+	 </ul>
+
+	<!-- Now Attributes!!! -->
+	<h2>Attributes</h2>
+	<p>key = "value" form </p>
+	<ul>
+	 	<li><b>image</b>: img src = "image_name/url" </li> 
+	 	<img src="https://images-na.ssl-images-amazon.com/images/I/41OzZbQ9PmL.jpg">
+	 	<li><b>link</b>: a href = "url" 
+	 		<ul>
+	 			<li><a href="https://www.google.com/search?q=stitch&tbm=isch&source=iu&ictx=1&fir=RNT1Nte8dz4QYM%253A%252ChHiZIBXrYJdpJM%252C%252Fm%252F07yc3t&vet=1&usg=AI4_-kRYyh1CvJZWeRbeHvAMwn9qVBKX-w&sa=X&ved=2ahUKEwihh96tu_jiAhVUu54KHTFbAWcQ_B0wInoECAkQAw#imgrc=zYQ10RaJAlftiM:&vet=1">
+	 			Click me to see the picture </a></li>
+	 			<li><a href="exercise1.html">Go to exercise1</a></li>
+
+	 		</ul>
+	 	</li>
+	</ul>
+
+	<!-- Let's Talk about Tables -->
+	<h2>Table</h2>
+	<table border="1">
+	 	<tr>
+	 		<th>th stands for table header</th>
+	 		<th>Another table header</th>
+	 	</tr>
+	 	<tr>
+	 		<td> tr stands for table row </td>
+	 		<td> td means each cell</td>
+	 	</tr>
+	 	<tr>
+	 		<td> another row</td>
+	 		<td> another cell</td>
+	 	</tr>
+	</table>
+
+	<p> Another way to make tables: thead and tbody</p>
+	<table border="1">
+	 	<thead>
+	 		<tr>
+	 			<th>header1</th>
+	 			<th>header2</th>
+	 		</tr>
+	 	</thead>
+	 	<tbody>
+	 		<tr>
+	 			<td> cell1 </td>
+	 			<td> cell2 </td>
+	 		</tr>
+	 		<tr>
+	 			<td> cell3 </td>
+	 			<td> cell4 </td>
+	 		</tr>
+	 	</tbody>
+	</table>
+	<p> Exercise for this part: <a href="exercise2.html">exercise2</a></p>
+
+	 <!-- Now Forms!!! -->
+	<h2>Forms</h2>
+	 <ul>
+	 	<li>form action = "value" method = "value"
+	 		<ul>
+	 			<li>action: the url to send form data to </li>
+	 			<li>method: the type of HTTP request </li>
+	 		</ul>
+	 	</li>
+	 	<li>input: read user input
+	 		<ul>
+	 			<li>Type: </li>
+	 				<ul>
+	 					<li>text</li>
+	 						<ul>
+	 							<li>textarea</li>
+	 						</ul>
+	 					<li>email</li>
+	 					<li>password</li>
+	 					<li>radio</li>
+	 					<li>checkbox</li>
+	 				</ul>
+	 			<li>placehold: specify the input</li>
+	 			<li>validation: check whether the input is empty or not. </li>	
+	 				<ul>
+	 					<li><em>"required"</em></li>
+	 					<li>check the length</li>
+	 				</ul>
+	 			<li>Pick one radio: give the same name tag</li>
+	 			<li> Go to MDN for more information: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">The Input (Form Input) element</a></li>
+	 		</ul>
+	 	</li>
+	 	<li>label: use <em>for</em> and <em>id</em> to connect input and label or put input tag inside label tag. </li>
+	 	<li>select: select one of the give choices</li>
+	 	<li>value: use value tag to send the data</li>
+	 	<li>Go to exercise3: <a href="exercise3.html">Register Page</a></li>
+	</ul>
+
+
+
+
+
+
+</body>
+</html>
