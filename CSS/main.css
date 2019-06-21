@@ -1,0 +1,106 @@
+/*
+selector{
+	property: value;
+}
+*/
+
+/* Color */
+h3 {
+	color: red;
+}
+
+h4 {
+	color: #4298f4;
+}
+
+h5 {
+	color: rgba(0, 200, 100, 0.5);
+}
+
+/* Background */
+#firstline{
+	background: yellow;
+}
+
+body {
+	/*background: #fffce0 ;*/
+	background: url(https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Border:*/
+#border {
+	border-color: #f4bc3a;
+	border-width: 2px;
+	border-style: solid;
+	/* border: black 2px dashed */
+}
+
+/* Class Selector */
+.completed {
+	text-decoration: line-through;
+}
+
+/* Star Selector: select everything on the page */
+* {
+
+}
+
+/* Decsendent Selector */
+ol li {
+	color: red;
+}
+
+/* Adjacent Selector */
+em + a {
+	border: black 1px dashed;
+}
+
+/* Attribute Selector */
+a[href="https://www.google.com.hk/?client=safari&channel=iphone_bm"]{
+	background-color: lightblue;
+}
+
+/* nth of type */
+p:nth-of-type(2){
+	background-color: rgba( 255, 0, 0, 0.2);
+}
+
+/* Fronts */
+#s1{
+	font-family: Courier New;
+}
+
+#s2{
+	font-size: 20px;
+}
+
+
+#s3{
+	font-size: 1.5em;
+}
+
+#s4{
+	font-weight: bold;
+}
+
+#fontpara{
+	line-height: 2;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+}
+
+#s5{
+	text-decoration: underline;
+}
+
+#s6{
+	text-decoration: line-through;
+}
+
+
+

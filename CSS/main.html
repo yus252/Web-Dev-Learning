@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Learning</title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+<!-- <style type="text/css">
+
+	h4{
+		color: blue;
+	}
+	</style> -->
+
+</head>
+<body>
+	<h1> CSS Learning</h1>
+
+	<h2>Colors</h2>
+	Let/s try different colors
+	<h3>Use color name</h3>
+	<h4>Use hexadecimal</h4>
+	<h5>Use rgb or rgba</h5>
+
+	<h2>Background</h2>
+	<ul>
+		<li id="firstline">Change the background color of current line</li>
+		<li>Select body to change the color of the whole page</li>
+		<li>Use url to change the background</li>
+		<li>Set backgorund-repeat to no-repeat</li>
+		<li>Set background_size to cover</li>
+	</ul>
+
+	<h2>Border</h2>
+	To create a border, we need:
+	<ul>
+		<li>color</li>
+		<li>width</li>
+		<li>style</li>
+	</ul>
+	<p id="border">Give this line a border</p>
+
+	<h2>Selector</h2>
+	<ul>
+		<li><b>Element Selector</b>: div, li, h1...</li>
+		<li><b>IDs</b>: use #</li>
+		<li><b>Class Selector</b>: use .
+			<br> 
+			<input type="checkbox" name="hw" checked="true">
+			<span class="completed"> Finsh homework </span>
+		</li>
+		<li> <b>Star Selector</b>: select everything on the page</li>
+		<li> <b>Descendant Selector</b>: select an element inside an element
+			<br> Example:
+			<ol>
+				<li>li inside ol</li>
+				<li> write as ol li in selector</li>
+			</ol>
+		</li>
+		<li><b>Adjacent Selector</b>:
+			<em> em </em> folloing by <a href="https://www.google.com.hk/?client=safari&channel=iphone_bm">Go to Google </a>
+		</li>
+		<li><b>Attribute Selector</b>: selector element by attribute</li>
+		<li><b>nth of type</b>: the nth elements of a certain type
+			<p> This is the first paragraph of current block. </p>
+			<p> This is the second paragraph. Thus, we write p: nth-of-type(2) </p>
+		</li> 
+		<li>Go to Selectors Exersice: <a href="selectorsExercise.html">Selectors Exersice</a></li>
+	</ul>
+
+	<h2>Inheritance & Specifity</h2>
+	If we change the property of parent, the child's property is also changed.
+	<br> For example, if we change the color of body to red, then all the text on this page will be red. 
+	<br> When the property is more specifically targeted, this property will overwrite the more general(parent) one.
+
+<h2>Fonts</h2>
+<a href="https://www.cssfontstack.com">CSS Fonts Stack</a>
+<ul>
+	<li><b>font-family</b>:<span id="s1"> Now change the font into Courier New. </span></li>
+	<li><b>font-size</b>: 
+		<ul>
+			<li><span id="s2"> Use pixel</span></li>
+			<li> Use <span id="s3"> relative</span> front size</li>
+		</ul>
+	</li>
+	<li><b>font-weight</b>: <span id="s4">bold</span></li>
+	<li><b>font-height</b>: 
+		Let's start a new pharagraph.
+		<p = id="fontpara">
+			line 1 line 1 line 1 
+			<br> line 2 line 2 line 2
+		</p>
+	</li>
+	<li><b>text-align</b>: Let's move the header "CSS Learning" to the center. </li>
+	<li><b>text-decoration</b>:
+		<br><span id="s5"> underline </span>
+		<br><span id="s6"> line through </span>
+	</li>
+	<li><a href="https://fonts.google.com"><b>Google Font</b></a></li>
+</ul>
+
+
+
+</body>
+</html>
