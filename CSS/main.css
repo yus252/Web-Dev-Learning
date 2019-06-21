@@ -20,6 +20,7 @@ h5 {
 /* Background */
 #firstline{
 	background: yellow;
+	width: 21%;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 	background: url(https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-left: 30px;
 }
 
 /* Border:*/
@@ -35,6 +37,9 @@ body {
 	border-width: 2px;
 	border-style: solid;
 	/* border: black 2px dashed */
+	width: 12%;
+	padding: 5px;
+	text-align: center;
 }
 
 /* Class Selector */
@@ -65,6 +70,7 @@ a[href="https://www.google.com.hk/?client=safari&channel=iphone_bm"]{
 /* nth of type */
 p:nth-of-type(2){
 	background-color: rgba( 255, 0, 0, 0.2);
+	width: 30%;
 }
 
 /* Fronts */
@@ -102,5 +108,45 @@ h1{
 	text-decoration: line-through;
 }
 
+/* Google Font */
+#gMoo{
+	font-family: 'Swanky and Moo Moo'; 
+}
 
+#gMali{
+	font-family: 'Mali';
+}
+
+/** Box Model */
+/*
+selector{
+	Content: width + height;
+	Border:
+	Pading:
+	Margin:
+}
+Use this to change the background and border above
+*/
+
+#m{
+	background-color: lightgray;
+	border: rgba( 0, 0, 0, 0.8) solid 2px;
+	/*margin: 20px;*/
+	/*margin-top: 20px;*/
+	/*margin: 20px 50px 10px 50px;*/
+	margin: auto 20px;
+}
+
+#tic{
+	background-color: rgba( 255, 255, 255, 0.0);
+}
+
+#blog{
+	margin: 20px 0px 100px 0px;
+}
+
+
+h1{
+	margin: 80px auto;
+}
 
