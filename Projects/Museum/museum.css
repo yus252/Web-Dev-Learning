@@ -1,0 +1,46 @@
+body{
+  background-color: #c1ffa3;
+  font-family: Nunito, sans-serif;
+}
+
+#mainNavbar{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+#mainNavbar .navbar-brand{
+  color: #007133;
+}
+
+#mainNavbar .nav-link{
+  color: white;
+}
+
+#mainNavbar .nav-link:hover{
+  color: #007133;
+}
+
+#headingGroup span{
+  color: #007133;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 2.6rem;
+    }
+}
+
+h2{
+  color: #007133;
+}
+
+.navbar.scrolled {
+    background: #00e153;
+    transition: background 500ms;
+}
