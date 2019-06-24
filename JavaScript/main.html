@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JavaScript Learning</title>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+</head>
+<body>	
+
+    <nav class="navbar navbar-dark bg-dark-inverse fixed-top justify-content-around mb-5" style="background-color: white;">
+        <a class="navbar-brand" href="#">
+        	<div class="row">
+        		<div class="col-12 text-center">
+        			<h1> JavaScript Learning</h1>
+        		</div>
+        		<div class="col-12 text-center"> 
+        			<h4 id="author">@author Yuling Shi</h4>
+        		</div>
+        	</div>
+       	</a>
+    </nav>
+
+	<h2>Introduction to JavaScript</h2>
+	<div class="container">
+		<h4>5 Primitive Datatypes</h4>
+		<ol>
+			<li>Numbers</li>
+			<li>Strings<br>
+				<ul>
+					<li>"Hello"[1]: the 2th character => 'e'</li>
+					<li>"Hello".length = 5</li>
+					<li>\ treat the next character differently</li>
+				</ul>
+			</li>
+			<li>Booleans</li>
+			<li>null</li>
+			<li>undefined</li>
+		</ol>
+
+		<h4>Varibles</h4>
+		<p>var variable_name = value;</p>
+
+		<h4>Null and Undefined</h4>
+		<ul>
+			<li>Undefined: initilize variables without declaring. Example: var name;</li>
+			<li>Null: nothing but declared</li>
+		</ul>
+
+		<h4>Build-in Methods</h4>
+		<ul>
+			<li><b>Alert</b>: alert("Hello World!");</li>
+			<li><b>Console.log</b>: console.log("Print Messages");</li>
+			<li><b>Prompt</b>: prompt("What is your name?");</li>
+			<li><a href="jsStalker.html">JavaScript Stalker Exercise</a></li>
+		</ul>	
+	</div>
+
+	<h2>Control Flow</h2>
+	<div class="container">
+		<h4>Boolean Logic</h4>
+		<ul>
+			<li> == : Equal to (.equal in java). Example: 1 == "1", true</li>
+			<li> === : Equal value and type (== in java). Example: 1 === "1", false</li>
+			<li> Number(): transform string into number. Example: Number("1") === 1, true</li>
+		</ul>
+		<h4>Logic Operator</h4>
+		<ul>
+			<li>&&</li>
+			<li>||</li>
+			<li> ! </li>
+		</ul>
+		<h4>Truthy and Falsy Values</h4>
+		<ul>
+			<li>Falsy Values:
+				<ul>
+					<li>false</li>
+					<li>0</li>
+					<li>""</li>
+					<li>null</li>
+					<li>undefined</li>
+					<li>NaN</li>
+				</ul>
+			</li>
+			<li class="important">Everything else is truethy</li>
+		</ul>
+
+		<h4>JS Conditionals</h4>
+		<ul>
+			<li>else</li>
+			<li>if else</li>
+			<li>else</li>
+		</ul>
+
+		<h4>Loops</h4>
+		<ul>
+			<li>For Loop</li>
+			<li>While Loop</li>
+			<li>"hello".indexOf(var_name):
+				<ul> 
+					<li> the index of a single character</li>
+					<li> the index of the beginning of a word</li>
+					<li> return -1 if not exists</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<h2>JavaScript Basics: Functions</h2>
+	<div class="container">
+		<h4>Function Expression and Declaration</h4>
+		<h4>Keyword: Return</h4>
+		<h4>Scope</h4>
+		<p>
+			var name = "Yuling"; //Global Scope<br>
+			function{ <br>
+				<pre>var name = "Yuling";<br>function{<br>   name = null; // visiable here <br>}</pre>
+			Outside varaibles can be used inside a function. Otherwise, undefined!
+		</p>
+		<h4>Higher Order Functions</h4>
+		<ul>
+			<li>Anonymous function
+				<pre>function func( para ){<br>   //something <br>}<br>array.high_order_func(func);</pre>
+				is same as:
+				<pre>array.hgiher_order_func(function( para ){<br>   //something<br>});</pre>
+				You can call a anonymous function like this:
+				<pre>(function( para ){<br> //do something<br>};</pre>
+			</li>
+
+		</ul>
+	</div>
+
+	<h2>JavaScript Basics: Arrays</h2>
+	<div class="container">
+		<h4>Introduction to Arrays</h4>
+		<ul>
+			<li><pre>var array = [ item1, item2, item3];</pre></li>
+			<li>Add items: <br>
+				<pre>array[array.length] = newItem;</pre>
+				or
+				<pre>brarray.push(newItem)</pre>
+			</li>
+			<li>Delete an item in the end: <pre>array.pop();</pre></li>
+			<li>Delete items: <pre>array.splice( start_index, num_of_items);</pre></li>
+			<li>Add at the fornt: <pre>array.unshift(new_first_item);</pre></li>
+			<li>Delete the front: <pre>array.shift();</pre></li>
+			<li>Find an item: <pre>array.indexOf(item_name);</pre></li>
+			<li>copy part of the array: <pre>array.slice( start_inclusive_index, end_exclusive_index);</pre></li>
+			<li>Iterating an Array:
+				<ul>
+					<li> For Loop: <pre>for( var i = 0; i < array.length; i++)</pre></li>
+					<li> forEach: <pre>array.forEach( function( array_item ){<br>  //do something<br>});</pre></li>
+				</ul>
+			</li>
+			<li>Exercise: <a href="Todo_List/todolist.html">Todo List</a></li>
+		</ul>
+	</div>
+
+	<h2>JavaScript Basics: Obeject</h2>
+	<div class="container">
+		Store data in key-value pairs.
+		<li> Create an object: <pre> var object_name{<br>   key_var_1: value_1, key_var_2: value2<br>};</pre>
+			or
+			<pre> var object_name = new Object();</pre>
+		</li>
+		<li> Access properties:
+			<pre>object_name[property] or object_name.preperty</pre>
+		</li>
+		<li>Array of Objects: <pre>var array = [ { name: Yuling, age: 20}, { animal: dog, hair: bold}]; </pre></li>
+		<li>Function of an object: <pre>var obj = { displayName: function(){ console.log("Yuling")}};<br>object.displayName(); // Like instance method in Java</pre></li>
+		<li>Keyword <em>this</em>: 
+			<pre> obj_func = function(){ console.log( this.data); }</pre>
+		</li>
+
+	</div>
+	
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
