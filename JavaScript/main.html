@@ -5,7 +5,6 @@
 
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script type="text/javascript" src="main.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 
@@ -173,11 +172,70 @@
 		<li>Array of Objects: <pre>var array = [ { name: Yuling, age: 20}, { animal: dog, hair: bold}]; </pre></li>
 		<li>Function of an object: <pre>var obj = { displayName: function(){ console.log("Yuling")}};<br>object.displayName(); // Like instance method in Java</pre></li>
 		<li>Keyword <em>this</em>: 
-			<pre> obj_func = function(){ console.log( this.data); }</pre>
+			<pre>obj_func = function(){ console.log( this.data); }</pre>
 		</li>
+	</div>
 
+	<h2>The Document Object Model - <b>DOM</b></h2>
+	<div class="container">
+		<ul>
+			<li>Select an element: </li>
+			<ol>
+				<li><pre>document.getElementById( id_name );</pre></li>
+				<li><pre>document.getElementByClass( class_name );</pre></li>
+				<li><pre>document.getElementByTagName( tag_name );</pre></li>
+				<li>CSS style selector to select the first element: 
+					<pre>document.querySelector( ".some_class" ):</pre>
+				</li>
+				<li>CSS style selector to select all the elements:
+					<pre>document.querySelectorAll( "h4" );</pre>
+				</li>
+			</ol>
+			<li>Manipuate an elemenet: 
+				<ol>
+					<li>Directly munipulating style:
+						<pre>element_name.style.color = "white";</pre>
+					</li>
+					<li>Define a class in CSS and then toglle with JS: 
+						<pre>var tag = document.selectByTag("h1");<br>tag.classList.<b>add</b>( "class_in_CSS");<br>tag.classList.<b>remove</b>( "class_in_CSS" );<br>tag.classList.<b>toggle</b>( "class_in_CSS" );//do the reverse</pre>
+					</li>
+					<li>Change the text:
+						<pre>tag.contextContent = "new message";</pre>
+					</li>
+					<li>Text with Tag:
+						<pre>tag.innerHTML</pre>
+					</li>
+					<li>Attributes:
+						<pre>var img = document.getElementByTag("img")[0]; <br>img.getAttribue("scr");<br>img.setAttribute("scr", "http://www.new.image");</pre>
+					</li>
+				</ol>
+			</li>
+			<li> <b>Events:</b>
+				<ul>
+					<li>The Syntax:
+						<pre>element.<b>addEventListern</b>( type, functionToCall);</pre>
+					</li>
+					<li>Events:
+						<ul>
+							<li>click</li>
+							<li>change</li>
+							<li id = "mouse_effect">mouseover & mouseout </li>
+						</ul>
+					</li>
+					<li>Exercise:
+					<ul>
+						<li><a href="color_toggle.html">Color Toggle</a></li>
+						<li><a href="Score_Keeper/score_keeper.html">Score Keeper</a></li>
+					</ul> 
+					</li>		
+				</ul>
+				
+			</li>
+		</ul>
 	</div>
 	
+
+	<script type="text/javascript" src="main.js"></script>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
