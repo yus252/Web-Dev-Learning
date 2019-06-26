@@ -7,3 +7,10 @@ line.addEventListener( "mouseover", function(){
 line.addEventListener( "mouseout", function(){
 	this.style.color = "black";
 })
+
+
+$("button").on("click", function(){
+ $("#fadeout").fadeToggle(1000, function(){
+ 	alert("Alert after fade effect!");
+ });
+});

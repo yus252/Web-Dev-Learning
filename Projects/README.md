@@ -84,3 +84,12 @@ writing the function while playing the game to seek out JavaScript effects, the
 code is a little bit messy. It wraps up all the things that I have learned so 
 far.New things: Math.random & floor and style.display in JavaScript and
 transition, outline, and border radius in CSS.
+
+
+#12 Todo List v2.0 on 6/25/2019
+This is a totally different version of the Todo List that I have created before.
+I used jQuery to create more animations, such as change color or fadeout while
+clicking a certain element, add new li to the list by changing HTML content, and
+slide out an icon while hovering over the elemnts.
+
+

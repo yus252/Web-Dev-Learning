@@ -6,7 +6,7 @@
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 <body>	
@@ -226,6 +226,7 @@
 					<ul>
 						<li><a href="color_toggle.html">Color Toggle</a></li>
 						<li><a href="Score_Keeper/score_keeper.html">Score Keeper</a></li>
+						<li><a href="Color_Game/color_game.html">RGB Color Game</a></li>
 					</ul> 
 					</li>		
 				</ul>
@@ -235,11 +236,89 @@
 	</div>
 	
 
+	<h2>JavaScript Library -- <b>jQuery</b></h2>
+	<div class="container">
+		<ul>
+			<li>Select elements:
+				<ul>
+					<li> Use $():
+						<pre>$("a") // return a list of elements</pre>
+					</li>
+					<li>Select the first one:
+						<pre>$("img:first-of-type)</pre>
+						or
+						<pre>$("img").first();</pre>
+					</li>
+					<li>Select the last one:
+						<pre>$("img").last();</pre>
+					</li>
+				</ul>
+			</li>
+			<li> Style Manipulation:
+				<ol>
+					<li> Use .css() to stye elements:
+						<pre>$(selector).css(property, value);<br>$("h1").css("color", "yellow");</pre>
+					</li>
+					<li>
+						Define mutiple properties:
+						<pre>var styles = {<br>   color:"red",<br>   background: "pink",<br>   border:"2px solid black"<br>}<br>$("h1").css(styles);</pre>
+						or 
+						<pre>$("h1").css({<br>   color:"red",<br>   background: "pink",<br>   border:"2px solid black"<br>});</pre>
+					</li>
+				</ol>
+			</li>
+			<li>Common Methods:
+				<ul>
+					<li>text(): get/set text content</li>
+					<li>html(): get/set the HTML content</li>
+					<li>attr(): get/set attributes </li>
+					<li>val(): get/set the value of input elemnt</li>
+					<li>Classes:
+						<ul>
+							<li>addClass():
+								<pre>$(selector).addClass("class1 class2);</pre>
+							</li>
+							<li>removeClass()</li>
+							<li>toggleClas(): same as classList.toggle("class_name");</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><b>Events: same as addEventListener()</b>
+				<ul>
+					<li>click():
+						<pre>$(selector).click(function(){ //something });</pre>
+					</li>
+					<li>keypress(): press a key<br>
+						Check which key is pressed:
+						<pre>$(selector).keypress(function(event)){<br>   if(even.which === keycode){<br>   //something<br>)};</pre>
+					</li>
+					<li>on(): add listeners for all potential elements. For exmaple, double click and single click.
+						<pre>$(selector).on( 'click', function(){<br>   //something<br>)};<br><br>$(selector).on( 'dbclick', function(){<br>   //another thing<br>)};</pre>
+						Example: Add on to existing ul and triggers while the old and <b>new</b> lis are clicked.
+						<pre>$("ul").on("click", "li", function(){<br>   $(this).toggleClass("done");<br>});</pre>
+					</li>
+				</ul>
+			</li>
+			<li>Effects:
+				<ul>
+					<li>fadeOut()</li>
+					<li>fadeIn()</li>
+					<li><span id="fadeout">fadeToggle()</span> <button id="fadeBtn" class="btn-primary rounded">Click me</button></li>
+					<li>slideUp()</li>
+					<li>slideDown()</li>
+					<li>slideToggle()</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+
+
 	<script type="text/javascript" src="main.js"></script>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
