@@ -92,4 +92,40 @@ I used jQuery to create more animations, such as change color or fadeout while
 clicking a certain element, add new li to the list by changing HTML content, and
 slide out an icon while hovering over the elemnts.
 
+#13 Simon Game on 6/25/2019
+This is a clone of Simon Game.The device creates a series of tones and lights 
+and requires a user to repeat the sequence. If the user succeeds, the series 
+becomes progressively longer and more complex. Once the user fails or the time 
+limit runs out, the game is over. What is new here is adding sounds and flash
+effect to the game. Also, I need one array to keep track of the button that the
+player has clicked and another array to record the sequence of randomly 
+generated color. Then, I need to check if they are same. If they are same, the
+game continues. Otherwise, I would reset all the variables and restart the game.
+
+
+#14 Patatap on 6/26/2019
+Paratap has the same idea as the online portable animation and sound kit of the
+same name. But this project is less complicated than the online version. When
+the alphabet keys are pressed, animated circles will show up on the page and a
+corresponding sound would play. I make the animation of circles by applying a 
+Paper.js, an open source vector graphics scripting framework that runs on top 
+of the HTML5 Canvas. Sound resources come from Paratap's github resources. I
+used another JavaScript library called Holwer, an audio library for the modern 
+web, to play the sound(make sure mutiple sounds can be played at the same time).
+But there is still a small problem here -- if you directly open the HTML file,
+there will be some the Cross Origin errors in the console. To get rid of those
+errors, you should:
+1) navigate to your project folder in the terminal
+2) if you have python v2.x installed then run: 
+   python -m SimpleHTTPServer
+    or for python v3.x:
+   python -m http.server
+3) open up your browser and navigate to http://localhost:8000
+4) open the circles.html file
+This project is not hard. Most of things that I do is reading documentation
+about how to use those libraries. But this project is really fun since I can
+create my own music while playing it. Hope you enjoy, too!
+
+
+
 
