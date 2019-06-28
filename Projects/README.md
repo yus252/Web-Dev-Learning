@@ -4,6 +4,12 @@ Date: June 19th, 2019
 File Description: It is used to explain every little projects that I have done
 to keep track of the process of learning website development.
 
+
+
+================================================================================
+                             Font-End Learnig
+================================================================================
+
 #1: Pokemon Chart on 6/20/2019
 I was learning HTML basics at this time. Thus, this project only applies by
 HTML. But I like this project a lot since I like Pokemon!!! The main concepts
@@ -127,5 +133,20 @@ about how to use those libraries. But this project is really fun since I can
 create my own music while playing it. Hope you enjoy, too!
 
 
+
+================================================================================
+                                 Back-End Learning
+================================================================================
+
+#1 EJSDemo on 6/26/2019
+Until now I have already learned the basics of Node.js, including NPM, Express,
+Template, and EJS. This project does not have fancy front-end stuff. It is used
+for me to do route practice. The orginal file is created on Goormide.
+
+#2 Movie Search App on 6/27/2019
+I just finished APIs and Request. Thus, this project combines the two. First, it
+reads the user input [movie name]. Then, it makes an request to the API omdbapi 
+and this API will return a JSON string to our website. Then, I parse in the JSON
+file and shown every movie's name on the results page.
 
 
