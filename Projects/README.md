@@ -14,8 +14,14 @@ For those Back-End(Full-Stack) projects, check the following steps:
 (1) Install MongoDB
 (2) Install npm
 (3) Install each package that is specified in package.json file.
-(4) Run ```bash ./mongod ``` in one terminal and then run ```bash mongo app.js
-``` in another terminal.
+(4) Run 
+```bash ./mongod 
+``` 
+in one terminal and then run 
+```bash 
+mongo app.js
+``` 
+in another terminal.
 (5) Go to https://test-webdev.run.goorm.io
 
 ## Authors
