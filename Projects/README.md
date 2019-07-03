@@ -15,7 +15,8 @@ For those Back-End(Full-Stack) projects, check the following steps:
 (2) Install npm
 (3) Install each package that is specified in package.json file.
 (4) Run 
-```bash ./mongod 
+```bash 
+./mongod 
 ``` 
 in one terminal and then run 
 ```bash 
@@ -30,10 +31,8 @@ Yuling Shi
 ## Date Created
 June 19th, 2019
 
-```
-Font-End Learnig
-```
 
+## Front-End Learning
 
 ### 1. Pokemon Chart created on 6/20/2019
 I was learning HTML basics at this time. Thus, this project only applies by
@@ -159,9 +158,8 @@ create my own music while playing it. Hope you enjoy, too!
 
 
 
-```
-Back-End Learning
-```
+
+## Back-End Learning
 
 
 ### 1. EJSDemo created on 6/26/2019
