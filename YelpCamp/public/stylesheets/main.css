@@ -1,0 +1,8 @@
+.delete-form{
+	display: inline;
+}
+
+#edit-form{
+	width:40%;
+	margin: 30px auto;
+}

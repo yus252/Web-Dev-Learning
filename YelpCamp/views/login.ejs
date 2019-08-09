@@ -1,0 +1,12 @@
+<% include ./partials/header.ejs %>
+<h1>
+	Log in form
+</h1>
+
+<form action="/login" method="POST">
+	<input type="text" name="username" placeholder="username">
+	<input	type="password" name="password" placehold="password">
+	<button>Log in </button>
+</form>
+
+<% include ./partials/footer.ejs %>
